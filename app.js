@@ -14,7 +14,6 @@ app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
 app.use(express.static('public'));
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.set('trust proxy', 1) // trust first proxy
@@ -26,7 +25,13 @@ app.use(session({
 }))
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.render('login');
+})
+
+app.post('/login', function (req, res) {
+  console.log(req.body.username);
+  console.log(req.body.password);
+  res.render('index');
 })
 
 app.listen(3000, function () {
