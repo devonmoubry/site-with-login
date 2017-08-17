@@ -1,10 +1,11 @@
 # Site with Login using express-session
 
 - Node.js
-- Express.js
-- Mustache
-- mustache-express
-- express-session
+- [Express.js](https://www.npmjs.com/package/express)
+- [Mustache.js](https://www.npmjs.com/package/mustache)
+- [mustache-express](https://www.npmjs.com/package/mustache-express)
+- [express-session](https://www.npmjs.com/package/express-session)
+- [body-parser](https://www.npmjs.com/package/body-parser)
 
 Build Steps:
 - `mkdir <project-name>`
