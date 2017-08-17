@@ -9,7 +9,7 @@
 
 Build Steps:
 - `mkdir <project-name>`
-- `cd <project-name`
+- `cd <project-name>`
 - `gitignore node`
 - `npm init --yes`
 - `npm install`
@@ -20,3 +20,9 @@ Build Steps:
 - `cd views`
 - `touch index.mustache`
 - `touch login.mustache`
+- `..`
+- `mkdir public`
+- `cd public`
+- `mkdir styles`
+- `cd styles`
+- `touch styles.css`

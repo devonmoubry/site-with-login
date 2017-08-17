@@ -10,6 +10,8 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
+app.use(express.static('public'))
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
